@@ -22,10 +22,11 @@
         const vancouver = new Date(now.toLocaleString("en-US", { timeZone: "America/Vancouver" }));
 
         const cutoff = new Date(vancouver);
-        cutoff.setHours(11, 45, 0, 0); // 11:30 AM Vancouver time
+        cutoff.setFullYear(2026, 1, 21); // Feb 21st, 2026
+        cutoff.setHours(11, 45, 0, 0);  // 11:45 AM Vancouver time
 
         if (vancouver >= cutoff) {
-            window.location.replace("https://democracyrising.ca/events-upcoming/");
+            window.location.replace("https://democracyrising.ca/");
         } else {
             fetch("instructions.md")
                 .then(res => res.text())
