@@ -16,7 +16,7 @@ Introduce yourself to someone nearby! Here are a few questions to get the conver
 
 - What brought you out today?
 - Have you been to a protest before?
-- What kind of acts of protest or solidarity speak to you most?
+- What kind of acts of community, solidarity or protest speak to you most?
 
 ---
 
@@ -48,7 +48,7 @@ Head back to home base to close out the day together.
 We take a moment to reflect on the very real impacts of fascist violence.
 
 **1:30 PM — Head to Brew Hall**  
-No reservations have been made, so it's first come first served.
+We would love to see you afterwards! No reservations have been made, so it's first come first served.
 
 ---
 
