@@ -1,4 +1,4 @@
-<div align="center"><img src="DR_LOGO.png" alt="Democracy Rising" style="max-width: 300px; margin-bottom: 20px;"></div>
+<div align="center"><a href="https://democracyrising.ca/"><img src="DR_LOGO.png" alt="Democracy Rising" style="max-width: 300px; margin-bottom: 20px;"></a></div>
 
 # Welcome to DE-ICE Vancouver!
 
