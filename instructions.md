@@ -47,8 +47,8 @@ Head back to home base to close out the day together.
 **1:20 PM — Closing Ceremony & Remarks**  
 We take a moment to reflect on the very real impacts of fascist violence.
 
-**1:30 PM — Après Beers at Brew Hall**  
-No reservations have been made, so it's first come first served — get there early!
+**1:30 PM — Head to Brew Hall**  
+No reservations have been made, so it's first come first served.
 
 ---
 
