@@ -1,3 +1,5 @@
+<div align="center"><img src="DR_LOGO.png" alt="Democracy Rising" style="max-width: 300px; margin-bottom: 20px;"></div>
+
 # Welcome to DE-ICE Vancouver!
 
 We're so glad you're here. Today we come together for a block party themed protest at Hootsuite HQ — with marching, interactive art, music, DJs, and community power.
