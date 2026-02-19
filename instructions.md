@@ -10,7 +10,7 @@ We're so glad you're here. Today we come together for a block party themed prote
 
 ---
 
-## While You Gather (11:00 – 11:15)
+## While You Gather (11:00 – 11:15am)
 
 Introduce yourself to someone nearby! Here are a few questions to get the conversation going:
 
@@ -58,3 +58,4 @@ No reservations have been made, so it's first come first served — get there ea
 
 - We protest peacefully
 - This event is still a protest, not an official event — keep your head up out there and stay safe!
+- We respect the neighbourhood and the people in it — it's Hootsuite and other fascist collaborators we're angry with
