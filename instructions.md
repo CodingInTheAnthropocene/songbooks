@@ -47,8 +47,8 @@ Head back to home base to close out the day together.
 **1:20 PM — Closing Ceremony & Remarks**  
 We take a somber moment to reflect on the very real impacts of fascist violence.
 
-**1:30 PM — Head to Brew Hall**  
-We would love to see you afterwards! No reservations have been made, so it's first come first served.
+**1:30 PM — Event End. Possible congretation at pub afterwards**  
+We would love to see you afterwads. Location TBD.
 
 ---
 
