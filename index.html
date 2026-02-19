@@ -2,6 +2,21 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DE-ICE Vancouver</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            font-family: sans-serif;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">Loading...</div>
     <script>
         const now = new Date();
         const vancouver = new Date(now.toLocaleString("en-US", { timeZone: "America/Vancouver" }));
@@ -12,11 +27,12 @@
         if (vancouver >= cutoff) {
             window.location.replace("https://democracyrising.ca/");
         } else {
-            window.location.replace("instructions.md");
+            fetch("instructions.md")
+                .then(res => res.text())
+                .then(text => {
+                    document.getElementById("content").innerHTML = marked.parse(text);
+                });
         }
     </script>
-</head>
-<body>
-    <a href="instructions.md">Loading...</a>
 </body>
 </html>
