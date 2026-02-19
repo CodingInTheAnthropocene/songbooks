@@ -45,10 +45,10 @@ Music, art stations, and community activity in full swing. Here are some suggest
 Head back to home base to close out the day together.
 
 **1:20 PM — Closing Ceremony & Remarks**  
-We take a somber moment to reflect on the very real impacts of fascist violence.
+We take moment to reflect on the very real impacts of fascist violence.
 
-**1:30 PM — Event End. Possible congretation at pub afterwards**  
-We would love to see you afterwads. Location TBD.
+**1:30 PM — Event End. Clean up. Possible congretation at pub afterwards**  
+Please help us sweep the block to ensure the marks we leave are intentional and directed. We would love to see you afterwards. Location TBD.
 
 ---
 
