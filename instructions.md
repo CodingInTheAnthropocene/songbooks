@@ -16,7 +16,7 @@ Introduce yourself to someone nearby! Here are a few questions to get the conver
 
 - What brought you out today?
 - Have you been to a protest before?
-- What protest or solidarity music speaks to you most?
+- What kind of acts of protest or solidarity speak to you most?
 
 ---
 
