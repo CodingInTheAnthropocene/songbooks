@@ -36,7 +36,7 @@ Music, art stations, and community activity in full swing. Here are some suggest
 
 - ✊ Keep the march going — make yourselves heard!
 - 📢 Plant yourself on Main Street and talk to whoever walks by
-- 🖼️ Visit our interactive exhibit commemorating victims of ICE violence under Trump
+- 🖼️ Contribute to our interactive exhibit commemorating victims of ICE violence under Trump
 - 🖍️ Let the whole neighbourhood know we were here — chalk anything legal!
 - 🎵 Enjoy the music
 - 📱 @hootsuite everything you do — let them hear us
