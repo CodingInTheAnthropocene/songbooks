@@ -1,39 +1,274 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DE-ICE Vancouver</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+    <title>No Tyrants — March 28, 2026</title>
     <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
         body {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            font-family: sans-serif;
-            line-height: 1.6;
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 24px 16px 64px;
+            font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 32px 0 24px;
+            border-bottom: 3px solid #546a8a;
+            margin-bottom: 32px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            letter-spacing: -0.5px;
+            color: #1a1a1a;
+            margin-bottom: 2px;
+        }
+
+        header .subtitle {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #546a8a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        header .date {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        header .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 16px;
+        }
+
+        header .logos img {
+            height: 48px;
+            width: auto;
+        }
+
+        .section-label {
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 6px 12px;
+            margin: 28px 0 12px;
+            border-radius: 4px;
+        }
+
+        .section-label.green {
+            background: #3a3a3a;
+            color: #fff;
+        }
+
+        .section-label.blue {
+            background: #3a3a3a;
+            color: #fff;
+        }
+
+        .event-list {
+            list-style: none;
+        }
+
+        .event-list li {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .event-list li:last-child {
+            border-bottom: none;
+        }
+
+        .time {
+            font-variant-numeric: tabular-nums;
+            font-weight: 600;
+            color: #3a3a3a;
+            padding-top: 1px;
+            white-space: nowrap;
+        }
+
+        .detail {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e5e5e5;
+        }
+
+        footer .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+            margin-bottom: 12px;
+        }
+
+        footer .logos img {
+            height: 48px;
+            width: auto;
+        }
+
+        footer a {
+            color: #546a8a;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .donate {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .donate a {
+            display: inline-block;
+            font-weight: 800;
+            font-size: 1.3rem;
+            text-decoration: none;
+            padding: 16px 48px;
+            border-radius: 8px;
+            letter-spacing: 0.5px;
+            transition: background 0.4s, color 0.4s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .donate a.dr {
+            background: #c8e44a;
+            color: #1a1a1a;
+        }
+
+        .donate a.iv {
+            background: #546a8a;
+            color: #fff;
+        }
+
+        .donate a:hover {
+            opacity: 0.85;
+        }
+
+        .blurb {
+            text-align: center;
+            color: #444;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+            padding: 0 8px;
         }
     </style>
 </head>
 <body>
-    <div id="content">Loading...</div>
-    <script>
-        const now = new Date();
-        const vancouver = new Date(now.toLocaleString("en-US", { timeZone: "America/Vancouver" }));
 
-        const cutoff = new Date(vancouver);
-        cutoff.setFullYear(2026, 1, 21); // Feb 21st, 2026
-        cutoff.setHours(11, 45, 0, 0);  // 11:45 AM Vancouver time
+<header>
+    <div class="logos">
+        <img src="DR_LOGO.png" alt="Democracy Rising">
+        <img src="INDIVISIBLE_LOGO.jpg" alt="Indivisible Vancouver">
+    </div>
+    <h1>NO TYRANTS</h1>
+    <div class="subtitle">Ice Out of Vancouver</div>
+    <div class="date">Saturday, March 28, 2026</div>
+</header>
 
-        if (vancouver >= cutoff) {
-            window.location.replace("https://democracyrising.ca/");
-        } else {
-            fetch("instructions.md")
-                .then(res => res.text())
-                .then(text => {
-                    document.getElementById("content").innerHTML = marked.parse(text);
-                });
-        }
-    </script>
+<div class="donate">
+    <a id="donate-btn" class="dr" href="">Donate</a>
+</div>
+
+<script>
+    const orgs = [
+        { cls: "dr", href: "https://www.gofundme.com/f/support-democracy-rising/donate?source=btn_donate" },
+        { cls: "iv", href: "https://www.gofundme.com/f/tqe3zk-indivisible-vancouver/donate?source=btn_donate_update" }
+    ];
+    const btn = document.getElementById("donate-btn");
+
+    function swap() {
+        const idx = Math.floor(Date.now() / 15000) % 2;
+        const org = orgs[idx];
+        btn.href = org.href;
+        btn.className = org.cls;
+    }
+
+    swap();
+    setInterval(swap, 1000);
+</script>
+
+<p class="blurb">Thank you for being here at this peaceful, pro-democracy demonstration. We're here to stand up for ourselves, speak up for others, and together say loudly — <strong>No Tyrants!</strong> We are entirely self-funded by volunteers. The stage, the sound equipment, the supplies — none of it is free. If you're able to chip in, even a few dollars goes a long way.</p>
+
+<div class="section-label green">Vancouver Public Library</div>
+<ul class="event-list">
+    <li>
+        <span class="time">11:00 AM</span>
+        <div class="detail">Kickoff &amp; Music</div>
+    </li>
+    <li>
+        <span class="time">11:25 AM</span>
+        <div class="detail">Speeches</div>
+    </li>
+</ul>
+
+<div class="section-label blue">March to Avison Young</div>
+<ul class="event-list">
+    <li>
+        <span class="time">11:45 AM</span>
+        <div class="detail">March Begins</div>
+    </li>
+</ul>
+
+<div class="section-label green">Avison Young Stop</div>
+<ul class="event-list">
+    <li>
+        <span class="time">12:05 PM</span>
+        <div class="detail">Speeches &amp; Street Chalking</div>
+    </li>
+</ul>
+
+<div class="section-label blue">March to Harbour Green Park</div>
+<ul class="event-list">
+    <li>
+        <span class="time">12:25 PM</span>
+        <div class="detail">March Continues</div>
+    </li>
+</ul>
+
+<div class="section-label green">Harbour Green Park</div>
+<ul class="event-list">
+    <li>
+        <span class="time">12:40 PM</span>
+        <div class="detail">Speeches &amp; Live Music</div>
+    </li>
+    <li>
+        <span class="time">1:15 PM</span>
+        <div class="detail">Closing Remarks</div>
+    </li>
+    <li>
+        <span class="time">1:20 PM</span>
+        <div class="detail">End</div>
+    </li>
+</ul>
+
+<footer>
+    <a href="https://democracyrising.ca">democracyrising.ca</a>
+</footer>
+
 </body>
 </html>
